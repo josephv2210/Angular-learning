@@ -1,0 +1,13 @@
+<div class="card bg-neutral text-neutral-content w-full">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title text-accent">{{ titleSignal() }}</h2>
+    <p>Contador {{ counterSignal() }}</p>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary" (click)="incrementSignal()">Aumentar contador</button>
+      <button class="btn btn-primary" (click)="resetSignal()" [disabled]="isDisabledSignal()">
+        reset
+      </button>
+      <button class="btn btn-primary" (click)="decrementSignal()">Disminuir</button>
+    </div>
+  </div>
+</div>

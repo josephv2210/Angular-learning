@@ -1,4 +1,11 @@
-<p>counter-page works!</p>
+<h2>{{ title }}</h2>
 
-<p>Current count {{ counter }}</p>
-<p>{{ counter }}</p>
+<p>Contador {{ counter }}</p>
+
+<button (click)="increment()">Aumentar contador</button>
+<button (click)="reset()" [disabled]="isDisabled()">reset</button>
+<button (click)="decrement()">Disminuir</button>
+
+<div class="divider divider-accent"></div>
+
+<counter-signal />

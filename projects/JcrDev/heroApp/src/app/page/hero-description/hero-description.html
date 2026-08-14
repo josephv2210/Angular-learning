@@ -1,0 +1,27 @@
+<div class="card bg-primary text-primary-content w-96">
+  <div class="card-body">
+    <span class="badge badge-xl badge-warning">Descripción de {{ nameHero() }}</span>
+
+    <h2 class="card-title">Nombre</h2>
+    <p>{{ nameHero() }}</p>
+
+    <h2 class="card-title">Edad</h2>
+    <p>{{ ageHero() }}</p>
+
+    <h2 class="card-title">Capitalizado</h2>
+    <p>{{ nameHero().toUpperCase() }}</p>
+
+    <h2 class="card-title">Descripción tradicional</h2>
+    <p>{{ showDescription() }}</p>
+
+    <h2 class="card-title">Descripción computed</h2>
+    <p>{{ showDescriptionHero() }}</p>
+
+    <div class="card-actions justify-center mt-10">
+      <button class="btn btn-accent" (click)="changeName()">Cambiar Nombre</button>
+      <button class="btn btn-info" (click)="changeAge()">Cambiar Edad</button>
+      <button class="btn btn-warning" (click)="changeVisibility()">Mostrar Descripción</button>
+      <button class="btn btn-error" (click)="reset()">Restablecer</button>
+    </div>
+  </div>
+</div>

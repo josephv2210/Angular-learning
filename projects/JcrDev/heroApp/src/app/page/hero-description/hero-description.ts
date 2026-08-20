@@ -31,6 +31,7 @@ export class HeroDescription {
 
   // Señales computadas
   // solo se ejecuta cuando realmente hay un cambio en las señales que se usan dentro de la función
+  // por lo que es más eficiente que la función showDescription()
   showDescriptionHero = computed(() => {
     console.log('computed');
     if (this.isVisible()) {
